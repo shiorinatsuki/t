@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Your Name - Portfolio</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1>Your Name</h1>
+        <p>Welcome to my portfolio website</p>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="profile.jpg" alt="Your Name - Profile Picture">
+        <p>Your detailed description goes here.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-card" onmouseover="addHover(this)" onmouseout="removeHover(this)">
+            <img src="project1.jpg" alt="Project 1">
+            <h3>Project 1</h3>
+            <p>Brief description of Project 1.</p>
+            <p>Technologies used: HTML, CSS, JavaScript</p>
+            <a href="#" target="_blank">View Project</a>
+        </div>
+
+        <!-- Repeat the above block for other projects -->
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <!-- Your form fields go here (e.g., name, email, message) -->
+            <button type="submit" onclick="validateForm()">Submit</button>
+        </form>
+        <div class="social-links">
+            <a href="#" target="_blank">LinkedIn</a>
+            <a href="#" target="_blank">GitHub</a>
+            <!-- Add more social media links as needed -->
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
